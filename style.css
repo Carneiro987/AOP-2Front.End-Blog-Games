@@ -1,0 +1,159 @@
+/* 1. GERAL E CORPO DA PÁGINA: Configura o fundo preto escuro (#101010), texto branco, fonte Arial limpa e remove as margens padrões da página. */
+body {
+    background-color: #101010;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* 2. CABEÇALHO E NAVEGAÇÃO: Centraliza tudo no meio, com fundo quase preto (#080808), borda inferior amarela marcante e os links do menu com efeito hover amarelo. */
+header {
+    background-color: #080808;
+    padding: 25px;
+    border-bottom: 3px solid #fcee0a;
+    text-align: center;
+}
+
+header h1 {
+    color: #fcee0a;
+    margin: 0 0 5px 0;
+}
+
+header p {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+
+header span {
+    color: #ffffff;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #fcee0a;
+}
+
+/* 3. ESTRUTURA PRINCIPAL E INTRODUÇÃO: Centraliza o conteúdo principal ocupando 85% da largura da tela e cria o bloco de introdução com uma barra amarela vertical na lateral esquerda. */
+main {
+    width: 85%;
+    margin: 30px auto;
+}
+
+.intro {
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-left: 4px solid #fcee0a;
+    margin-bottom: 30px;
+}
+
+.tag {
+    color: #fcee0a;
+}
+
+/* 4. SEÇÃO DE CARDS E DESTAQUES: Organiza os cards lado a lado usando Flexbox com espaçamento uniforme, padronizando o tamanho das imagens. */
+.destaques h2 {
+    color: #fcee0a;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1b1b1b;
+    padding: 15px;
+    width: 33%;
+    border-top: 3px solid #fcee0a;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #ffffff;
+    margin: 10px 0 5px 0;
+}
+
+.card a {
+    color: #fcee0a;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card p {
+    color: #bbbbbb;
+    font-size: 14px;
+}
+
+/* 5. BANNERS: Garante que os banners ocupem 100% da largura do bloco. */
+.banner {
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* 6. FORMULÁRIO DE CONTATO: Empilha os campos na vertical com fundo escuro, bordas cinzas e botão amarelo em destaque. */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    background-color: #101010;
+    color: #ffffff;
+    border: 1px solid #555555;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #fcee0a;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #e5d709;
+}
+
+/* 7. RODAPÉ DA PÁGINA: Fecha a página com uma faixa escura centralizada, delimitada por uma linha amarela no topo e texto em cinza. */
+footer {
+    background-color: #080808;
+    border-top: 2px solid #fcee0a;
+    padding: 15px;
+    text-align: center;
+    color: #888888;
+    margin-top: 40px;
+}
